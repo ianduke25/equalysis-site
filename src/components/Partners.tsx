@@ -21,6 +21,11 @@ const partners = [
     name: "Contra Costa Public Defenders",
     logo: "/lovable-uploads/13b77ab8-a3e2-4608-a2ca-7e33b7ddd543.png",
     alt: "Contra Costa Public Defenders"
+  },
+  {
+    name: "Center for Policing Equity",
+    logo: "/lovable-uploads/823b2fb9-2dc6-4984-b1f1-275f694048fa.png",
+    alt: "Center for Policing Equity"
   }
 ];
 
@@ -48,8 +53,8 @@ const Partners = () => {
                 <img
                   src={partner.logo}
                   alt={partner.alt}
-                  className="h-16 w-auto object-contain"
-                  style={{ maxWidth: '200px' }}
+                  className="h-24 w-auto object-contain"
+                  style={{ maxWidth: '300px' }}
                 />
               </div>
             ))}

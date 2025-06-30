@@ -122,31 +122,31 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Custom teal colors for the legal theme */
+/* Custom teal colors updated to #185d66 */
 .text-teal-600 {
-  color: rgb(5 150 105);
+  color: #185d66;
 }
 
 .bg-teal-600 {
-  background-color: rgb(5 150 105);
+  background-color: #185d66;
 }
 
 .hover\:bg-teal-700:hover {
-  background-color: rgb(4 120 87);
+  background-color: #14525a;
 }
 
 .bg-teal-100 {
-  background-color: rgb(204 251 241);
+  background-color: #e0f2f1;
 }
 
 .border-teal-600 {
-  border-color: rgb(5 150 105);
+  border-color: #185d66;
 }
 
 .hover\:text-teal-600:hover {
-  color: rgb(5 150 105);
+  color: #185d66;
 }
 
 .text-teal-400 {
-  color: rgb(45 212 191);
+  color: #26a69a;
 }

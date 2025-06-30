@@ -1,5 +1,5 @@
 
-import { ArrowRight, Scale, BarChart3 } from "lucide-react";
+import { ArrowRight, Scale } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
@@ -31,18 +31,6 @@ const Hero = () => {
             <Button variant="outline" size="lg" className="border-gray-300 text-gray-700 hover:bg-gray-50 px-8 py-3">
               View Our Work
             </Button>
-          </div>
-          
-          <div className="mt-16 flex justify-center">
-            <div className="bg-white p-8 rounded-xl shadow-lg border max-w-md">
-              <div className="flex items-center space-x-4">
-                <BarChart3 className="h-12 w-12 text-teal-600" />
-                <div className="text-left">
-                  <p className="font-semibold text-gray-900 text-lg">Data-Driven Results</p>
-                  <p className="text-gray-600">Precision in every analysis</p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
