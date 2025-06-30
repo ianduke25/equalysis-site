@@ -1,5 +1,5 @@
 
-import { Database, Cpu, FileText, Scale } from "lucide-react";
+import { Cpu, FileText, Scale } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const services = [
@@ -7,11 +7,6 @@ const services = [
     icon: Cpu,
     title: "Machine Learning Training and Deployment",
     description: "Focusing on reliability and a unique commitment to data privacy, we leverage case-specific data to train custom machine learning models, complemented by the use of secure, private pretrained models."
-  },
-  {
-    icon: Database,
-    title: "Thoughtfully Designed Tools and Databases",
-    description: "Prioritizing accessibility, Equalysis provides all community partners with complementary access to regularly updated investigative tools and databases."
   },
   {
     icon: FileText,
@@ -26,7 +21,11 @@ const Services = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <div className="flex items-center justify-center space-x-2 text-teal-600 mb-4">
-            <Scale className="h-5 w-5" />
+            <img 
+              src="/lovable-uploads/361fc167-3a71-4a1d-a145-3eb8db8aec2e.png" 
+              alt="Equalysis" 
+              className="h-6 w-auto"
+            />
             <span className="text-sm font-semibold tracking-wide uppercase">Our Services</span>
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
@@ -34,7 +33,7 @@ const Services = () => {
           </h2>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
           {services.map((service, index) => (
             <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg hover:-translate-y-2">
               <CardContent className="p-8">

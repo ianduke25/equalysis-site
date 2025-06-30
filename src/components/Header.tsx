@@ -1,17 +1,18 @@
 
 import { Scale } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <header className="bg-white border-b border-gray-100 sticky top-0 z-50 backdrop-blur-sm bg-white/95">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20">
           <div className="flex items-center space-x-3">
             <img 
               src="/lovable-uploads/c3f6d3c6-3561-42f2-8551-b8b807c096de.png" 
               alt="Equalysis" 
-              className="h-12 w-auto"
+              className="h-16 w-auto"
             />
           </div>
           

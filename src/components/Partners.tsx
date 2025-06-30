@@ -35,7 +35,11 @@ const Partners = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <div className="flex items-center justify-center space-x-2 text-teal-600 mb-4">
-            <Scale className="h-5 w-5" />
+            <img 
+              src="/lovable-uploads/361fc167-3a71-4a1d-a145-3eb8db8aec2e.png" 
+              alt="Equalysis" 
+              className="h-6 w-auto"
+            />
             <span className="text-sm font-semibold tracking-wide uppercase">Our Impact</span>
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
@@ -53,7 +57,7 @@ const Partners = () => {
                 <img
                   src={partner.logo}
                   alt={partner.alt}
-                  className="h-24 w-auto object-contain"
+                  className="h-32 w-auto object-contain"
                   style={{ maxWidth: '300px' }}
                 />
               </div>

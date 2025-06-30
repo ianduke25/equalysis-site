@@ -9,9 +9,9 @@ const Footer = () => {
           <div className="md:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
               <img 
-                src="/lovable-uploads/c3f6d3c6-3561-42f2-8551-b8b807c096de.png" 
+                src="/lovable-uploads/361fc167-3a71-4a1d-a145-3eb8db8aec2e.png" 
                 alt="Equalysis" 
-                className="h-8 w-auto brightness-0 invert"
+                className="h-12 w-auto brightness-0 invert"
               />
             </div>
             <p className="text-gray-300 leading-relaxed mb-6 max-w-md">
@@ -30,7 +30,6 @@ const Footer = () => {
               <li><a href="#" className="hover:text-teal-400 transition-colors">Machine Learning</a></li>
               <li><a href="#" className="hover:text-teal-400 transition-colors">Data Analysis</a></li>
               <li><a href="#" className="hover:text-teal-400 transition-colors">Statistical Reports</a></li>
-              <li><a href="#" className="hover:text-teal-400 transition-colors">Database Tools</a></li>
             </ul>
           </div>
           
