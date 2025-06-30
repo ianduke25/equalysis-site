@@ -1,0 +1,63 @@
+
+import { Scale } from "lucide-react";
+
+const partners = [
+  {
+    name: "Lawyers' Committee for Civil Rights",
+    logo: "/lovable-uploads/aaab5316-1813-4487-bc6f-bb56eaec826f.png",
+    alt: "Lawyers' Committee for Civil Rights of the San Francisco Bay Area"
+  },
+  {
+    name: "ACLU",
+    logo: "/lovable-uploads/d01e782b-981e-4693-a6ad-abe76a27a08c.png",
+    alt: "ACLU"
+  },
+  {
+    name: "Covington",
+    logo: "/lovable-uploads/88eb02cd-82d1-4934-8107-6ad06a2eeddf.png",
+    alt: "Covington"
+  },
+  {
+    name: "Contra Costa Public Defenders",
+    logo: "/lovable-uploads/13b77ab8-a3e2-4608-a2ca-7e33b7ddd543.png",
+    alt: "Contra Costa Public Defenders"
+  }
+];
+
+const Partners = () => {
+  return (
+    <section id="partners" className="py-20 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <div className="flex items-center justify-center space-x-2 text-teal-600 mb-4">
+            <Scale className="h-5 w-5" />
+            <span className="text-sm font-semibold tracking-wide uppercase">Our Impact</span>
+          </div>
+          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+            Proud to support change makers at
+          </h2>
+        </div>
+        
+        <div className="relative overflow-hidden">
+          <div className="flex animate-scroll space-x-16 items-center">
+            {[...partners, ...partners, ...partners].map((partner, index) => (
+              <div
+                key={index}
+                className="flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100"
+              >
+                <img
+                  src={partner.logo}
+                  alt={partner.alt}
+                  className="h-16 w-auto object-contain filter brightness-0"
+                  style={{ maxWidth: '200px' }}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Partners;
