@@ -1,6 +1,4 @@
 
-import { Target, Users, Award } from "lucide-react";
-
 const About = () => {
   return (
     <section id="about" className="py-20 bg-white">
@@ -18,34 +16,6 @@ const About = () => {
               lawyers, criminal defense investigators, and all those fighting for a more equal 
               world can trust.
             </p>
-          </div>
-          
-          <div className="grid md:grid-cols-3 gap-8 mt-16">
-            {[
-              {
-                icon: Target,
-                title: "Precision & Accuracy",
-                description: "Every analysis is conducted with meticulous attention to detail and scientific rigor."
-              },
-              {
-                icon: Users,
-                title: "Collaborative Approach",
-                description: "We work closely with legal teams to ensure our insights align with case strategy."
-              },
-              {
-                icon: Award,
-                title: "Trusted Expertise",
-                description: "Recognized by leading civil rights organizations for our commitment to justice."
-              }
-            ].map((item, index) => (
-              <div key={index} className="text-center space-y-4">
-                <div className="w-16 h-16 bg-teal-100 rounded-2xl flex items-center justify-center mx-auto">
-                  <item.icon className="h-8 w-8 text-teal-600" />
-                </div>
-                <h3 className="text-xl font-semibold text-gray-900">{item.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{item.description}</p>
-              </div>
-            ))}
           </div>
         </div>
       </div>

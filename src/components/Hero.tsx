@@ -1,18 +1,24 @@
 
-import { ArrowRight, Scale } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
     <section className="relative bg-gradient-to-br from-gray-50 to-white overflow-hidden">
       <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+      
+      {/* Hero Bridge Image */}
+      <div className="relative h-96 overflow-hidden">
+        <img 
+          src="/lovable-uploads/37f21012-544f-412b-be74-5930075c95b3.png"
+          alt="Golden Gate Bridge"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+      </div>
+      
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
         <div className="text-center space-y-8">
-          <div className="flex items-center justify-center space-x-2 text-teal-600">
-            <Scale className="h-5 w-5" />
-            <span className="text-sm font-semibold tracking-wide uppercase">Data Science • Legal Excellence</span>
-          </div>
-          
           <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight max-w-5xl mx-auto">
             A data science consulting firm dedicated to{" "}
             <span className="text-teal-600">advancing equity</span> and{" "}
