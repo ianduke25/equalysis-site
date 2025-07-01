@@ -49,10 +49,10 @@ const Testimonials = () => {
                 alt="Equalysis" 
                 className="h-6 w-auto"
               />
-              <span className="text-sm font-semibold tracking-wide uppercase">Client Testimonials</span>
+              <span className="text-sm font-semibold tracking-wide uppercase">Testimonials</span>
             </div>
             <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              What our clients say about Equalysis
+              What our clients say
             </h1>
           </div>
           
