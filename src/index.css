@@ -124,12 +124,40 @@ All colors MUST be HSL.
   }
 }
 
+@keyframes seamless-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.333%);
+  }
+}
+
+@keyframes scale-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
 .animate-scroll {
   animation: scroll 30s linear infinite;
 }
 
 .animate-infinite-scroll {
   animation: infinite-scroll 40s linear infinite;
+}
+
+.animate-seamless-scroll {
+  animation: seamless-scroll 60s linear infinite;
+}
+
+.animate-scale-in {
+  animation: scale-in 0.6s ease-out forwards;
 }
 
 .bg-grid-pattern {
