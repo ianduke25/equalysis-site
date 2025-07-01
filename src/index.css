@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -97,11 +97,11 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Crimson Text', serif;
+    font-family: 'Source Serif Pro', serif;
   }
   
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Crimson Text', serif;
+    font-family: 'Source Serif Pro', serif;
   }
 }
 
@@ -111,12 +111,25 @@ All colors MUST be HSL.
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes infinite-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
   }
 }
 
 .animate-scroll {
   animation: scroll 30s linear infinite;
+}
+
+.animate-infinite-scroll {
+  animation: infinite-scroll 40s linear infinite;
 }
 
 .bg-grid-pattern {
