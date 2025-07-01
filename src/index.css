@@ -133,6 +133,15 @@ All colors MUST be HSL.
   }
 }
 
+@keyframes faster-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.333%);
+  }
+}
+
 @keyframes scale-in {
   0% {
     opacity: 0;
@@ -154,6 +163,10 @@ All colors MUST be HSL.
 
 .animate-seamless-scroll {
   animation: seamless-scroll 60s linear infinite;
+}
+
+.animate-faster-scroll {
+  animation: faster-scroll 40s linear infinite;
 }
 
 .animate-scale-in {

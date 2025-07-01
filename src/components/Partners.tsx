@@ -6,31 +6,31 @@ const partners = [
     name: "Lawyers' Committee for Civil Rights",
     logo: "/lovable-uploads/aaab5316-1813-4487-bc6f-bb56eaec826f.png",
     alt: "Lawyers' Committee for Civil Rights of the San Francisco Bay Area",
-    className: "h-28 sm:h-32 md:h-36"
+    className: "h-20 sm:h-24 md:h-28"
   },
   {
     name: "ACLU",
     logo: "/lovable-uploads/d01e782b-981e-4693-a6ad-abe76a27a08c.png",
     alt: "ACLU",
-    className: "h-20 sm:h-24 md:h-28"
+    className: "h-16 sm:h-18 md:h-20"
   },
   {
     name: "Covington",
     logo: "/lovable-uploads/88eb02cd-82d1-4934-8107-6ad06a2eeddf.png",
     alt: "Covington",
-    className: "h-28 sm:h-32 md:h-36"
+    className: "h-20 sm:h-24 md:h-28"
   },
   {
     name: "Contra Costa Public Defenders",
     logo: "/lovable-uploads/13b77ab8-a3e2-4608-a2ca-7e33b7ddd543.png",
     alt: "Contra Costa Public Defenders",
-    className: "h-28 sm:h-32 md:h-36"
+    className: "h-20 sm:h-24 md:h-28"
   },
   {
     name: "Center for Policing Equity",
     logo: "/lovable-uploads/823b2fb9-2dc6-4984-b1f1-275f694048fa.png",
     alt: "Center for Policing Equity",
-    className: "h-28 sm:h-32 md:h-36"
+    className: "h-20 sm:h-24 md:h-28"
   }
 ];
 
@@ -53,7 +53,7 @@ const Partners = () => {
         </div>
         
         <div className="relative overflow-hidden">
-          <div className="flex animate-seamless-scroll space-x-16 sm:space-x-20 md:space-x-24 items-center">
+          <div className="flex animate-faster-scroll space-x-12 sm:space-x-16 md:space-x-20 items-center">
             {[...partners, ...partners, ...partners].map((partner, index) => (
               <div
                 key={index}
@@ -63,7 +63,7 @@ const Partners = () => {
                   src={partner.logo}
                   alt={partner.alt}
                   className={`${partner.className} w-auto object-contain`}
-                  style={{ maxWidth: '320px' }}
+                  style={{ maxWidth: '280px' }}
                 />
               </div>
             ))}
