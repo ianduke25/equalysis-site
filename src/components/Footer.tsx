@@ -15,13 +15,8 @@ const Footer = () => {
               />
             </div>
             <p className="text-gray-300 leading-relaxed mb-6 max-w-md">
-              A data science consulting firm dedicated to advancing equity and realizing justice 
-              through innovative analytical approaches and cutting-edge technology.
+              A data science consulting firm dedicated to advancing equity and realizing justice.
             </p>
-            <div className="flex items-center space-x-2 text-teal-400">
-              <Scale className="h-4 w-4" />
-              <span className="text-sm font-medium">Justice Through Data</span>
-            </div>
           </div>
           
           <div>
