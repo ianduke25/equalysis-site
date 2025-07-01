@@ -17,16 +17,7 @@ const Footer = () => {
             <p className="text-gray-300 leading-relaxed mb-6 max-w-md">
               A data science consulting firm dedicated to advancing equity and realizing justice.
             </p>
-          </div>
-          
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Services</h3>
-            <ul className="space-y-2 text-gray-300">
-              <li><a href="#" className="hover:text-teal-400 transition-colors">Machine Learning</a></li>
-              <li><a href="#" className="hover:text-teal-400 transition-colors">Data Analysis</a></li>
-              <li><a href="#" className="hover:text-teal-400 transition-colors">Statistical Reports</a></li>
-            </ul>
-          </div>
+          </div> 
           
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
