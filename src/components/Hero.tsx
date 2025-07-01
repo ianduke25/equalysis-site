@@ -23,7 +23,7 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link to="/testimonials">
                 <Button size="lg" className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-3 w-full">
-                  View Our Work
+                  What Our Community Partners Say
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
