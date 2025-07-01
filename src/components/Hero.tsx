@@ -18,7 +18,7 @@ const Hero = () => {
             </h1>
             
             <p className="text-xl text-gray-600 leading-relaxed">
-              We blend traditional investigative approaches with contemporary data science methods to support equity-driven litigation and create meaningful change.
+              We blend traditional investigative approaches with contemporary data science methods to support equity-driven litigation.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
