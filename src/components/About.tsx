@@ -13,7 +13,7 @@ const About = () => {
               of legal investigations, we blend traditional investigative approaches with 
               contemporary data science methods to support equity-driven litigation. We're 
               here to analyze data and employ artificial intelligence in ways that civil rights 
-              lawyers, criminal defense investigators, and all those fighting for a more equal 
+              lawyers, criminal defense investigators, and all those working toward a more equal 
               world can trust.
             </p>
           </div>
