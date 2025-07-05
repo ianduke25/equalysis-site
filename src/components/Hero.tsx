@@ -21,6 +21,7 @@ const Hero = () => {
               We blend traditional investigative approaches with contemporary data science methods to support equity-driven litigation.
             </p>
 
+            {/* Testimonials button temporarily removed - uncomment to restore:
             <div className="flex flex-col sm:flex-row gap-4">
               <Link to="/testimonials">
                 <Button size="lg" className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-3 w-full">
@@ -29,6 +30,7 @@ const Hero = () => {
                 </Button>
               </Link>
             </div>
+            */}
           </div>
 
           <div className="relative flex justify-center lg:justify-end">
