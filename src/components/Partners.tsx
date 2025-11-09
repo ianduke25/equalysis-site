@@ -46,7 +46,7 @@ const Partners = () => {
           </h2>
         </div>
         
-        <div className="relative overflow-hidden">
+        <div className="relative overflow-hidden max-w-[896px] sm:max-w-[944px] md:max-w-[992px] lg:max-w-[1040px] mx-auto">
           <div className="flex animate-mobile-fast-scroll md:animate-faster-scroll space-x-8 sm:space-x-12 md:space-x-16 lg:space-x-20 items-center">
             {[...partners, ...partners, ...partners].map((partner, index) => (
               <div
