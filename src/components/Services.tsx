@@ -102,7 +102,7 @@ const Services = () => {
               </p>
               <div className="mt-4 p-3 sm:p-4 bg-teal-700 rounded-lg">
                 <p className="text-xs sm:text-sm text-white leading-relaxed">
-                  Equalysis partnered with the ACLU of Northern California to develop software that tabulated more than 20,000 CAD reports with 99% accuracy.
+                  Equalysis partnered with the ACLU of Northern California to develop custom software that tabulated more than 20,000 CAD reports with 99% accuracy.
                 </p>
               </div>
             </CardContent>
