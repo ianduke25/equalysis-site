@@ -1,10 +1,12 @@
-
-import { Scale } from "lucide-react";
+import { Scale, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import ContactForm from "./ContactForm";
+import { useState } from "react";
 
 const Header = () => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  
   const scrollToSection = (sectionId: string) => {
     // If we're not on the home page, navigate there first
     if (window.location.pathname !== '/') {
@@ -15,6 +17,7 @@ const Header = () => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
+      setMobileMenuOpen(false);
     }
   };
 
@@ -53,7 +56,42 @@ const Header = () => {
             </button>
             <ContactForm />
           </nav>
+
+          <button 
+            className="md:hidden text-gray-700"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          >
+            {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          </button>
         </div>
+
+        {mobileMenuOpen && (
+          <div className="md:hidden border-t border-gray-100 py-4">
+            <nav className="flex flex-col space-y-4">
+              <button 
+                onClick={() => scrollToSection('about')}
+                className="text-gray-700 hover:text-teal-600 transition-colors font-medium text-base text-left"
+              >
+                About
+              </button>
+              <button 
+                onClick={() => scrollToSection('services')}
+                className="text-gray-700 hover:text-teal-600 transition-colors font-medium text-base text-left"
+              >
+                Services
+              </button>
+              <button 
+                onClick={() => scrollToSection('partners')}
+                className="text-gray-700 hover:text-teal-600 transition-colors font-medium text-base text-left"
+              >
+                Partners
+              </button>
+              <div className="pt-2">
+                <ContactForm />
+              </div>
+            </nav>
+          </div>
+        )}
       </div>
     </header>
   );

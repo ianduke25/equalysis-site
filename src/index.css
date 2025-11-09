@@ -142,6 +142,15 @@ All colors MUST be HSL.
   }
 }
 
+@keyframes mobile-fast-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.333%);
+  }
+}
+
 @keyframes scale-in {
   0% {
     opacity: 0;
@@ -167,6 +176,10 @@ All colors MUST be HSL.
 
 .animate-faster-scroll {
   animation: faster-scroll 40s linear infinite;
+}
+
+.animate-mobile-fast-scroll {
+  animation: mobile-fast-scroll 20s linear infinite;
 }
 
 .animate-scale-in {
