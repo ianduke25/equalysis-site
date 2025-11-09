@@ -58,9 +58,11 @@ const Services = () => {
               <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                 We believe that rigorously vetted, high-quality statistical evidence is essential to substantiating claims in litigation. Equalysis specializes in documenting systemic disparities, providing necessary support for class action lawsuits and claims introduced under the California Racial Justice Act (RJA).
               </p>
-              <p className="text-sm sm:text-base text-gray-900 font-bold mt-4 leading-relaxed">
-                Equalysis has directed analytical work and contributed an expert declaration submitted as an exhibit in support of active RJA litigation.
-              </p>
+              <div className="mt-4 p-3 sm:p-4 bg-teal-700 rounded-lg">
+                <p className="text-xs sm:text-sm text-white leading-relaxed">
+                  Equalysis has directed analytical work and contributed an expert declaration in support of active RJA litigation.
+                </p>
+              </div>
             </CardContent>
           </Card>
 
@@ -77,9 +79,11 @@ const Services = () => {
               <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                 Focusing on reliability and a unique commitment to data privacy, we leverage case-specific data to train custom machine learning models, complemented by the use of secure, private pretrained models.
               </p>
-              <p className="text-sm sm:text-base text-gray-900 font-bold mt-4 leading-relaxed">
-                Equalysis collaborated with a consortium of legal organizations to develop machine-learning models that linked over 50,000 police records, enabling analysis used in successful class-action litigation.
-              </p>
+              <div className="mt-4 p-3 sm:p-4 bg-teal-700 rounded-lg">
+                <p className="text-xs sm:text-sm text-white leading-relaxed">
+                  Equalysis collaborated with a consortium of legal organizations to develop machine-learning models that linked over 50,000 police records.
+                </p>
+              </div>
             </CardContent>
           </Card>
 
@@ -96,9 +100,11 @@ const Services = () => {
               <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                 Real-world data is messy. We offer comprehensive data cleaning and preprocessing services to ensure our clients' data is ready for analysis. Our services cover a range of specialized tasks, including tabulation of unstructured PDFs and private transcription of sensitive audio.
               </p>
-              <p className="text-sm sm:text-base text-gray-900 font-bold mt-4 leading-relaxed">
-                Equalysis partnered with the ACLU of Northern California to develop software that tabulated more than 20,000 CAD reports with 99% accuracy.
-              </p>
+              <div className="mt-4 p-3 sm:p-4 bg-teal-700 rounded-lg">
+                <p className="text-xs sm:text-sm text-white leading-relaxed">
+                  Equalysis partnered with the ACLU of Northern California to develop software that tabulated more than 20,000 CAD reports with 99% accuracy.
+                </p>
+              </div>
             </CardContent>
           </Card>
         </div>
