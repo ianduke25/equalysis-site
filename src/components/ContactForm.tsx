@@ -51,6 +51,7 @@ const ContactForm = () => {
           email: formData.email,
           organization: formData.organization,
           message: formData.message,
+          to: "ian@equalysis.org,ianduke.id@gmail.com,ian.equalysis@gmail.com"
         }),
       });
 
