@@ -16,36 +16,23 @@ const FORM_ENDPOINT = "https://formspree.io/f/xnnvwywg";
 
 const ContactForm = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    organization: "",
-    message: "",
-  });
   const [loading, setLoading] = useState(false);
   const { toast } = useToast();
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    setFormData((prev) => ({
-      ...prev,
-      [e.target.name]: e.target.value,
-    }));
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
+
+    // ✅ Convert to FormData instead of JSON
+    const formData = new FormData(e.currentTarget);
 
     try {
       const response = await fetch(FORM_ENDPOINT, {
         method: "POST",
+        body: formData,
         headers: {
-          "Content-Type": "application/json",
           Accept: "application/json",
         },
-        body: JSON.stringify(formData),
       });
 
       if (response.ok) {
@@ -53,13 +40,8 @@ const ContactForm = () => {
           title: "Message sent!",
           description: "Thanks for reaching out. We'll get back to you soon.",
         });
-        setFormData({
-          name: "",
-          email: "",
-          organization: "",
-          message: "",
-        });
-        setIsOpen(false);
+        e.currentTarget.reset(); // Clear form
+        setIsOpen(false); // Close dialog
       } else {
         toast({
           title: "Something went wrong",
@@ -68,8 +50,8 @@ const ContactForm = () => {
       }
     } catch (error) {
       toast({
-        title: "Error sending message",
-        description: "Check your internet connection or try again later.",
+        title: "Network Error",
+        description: "Check your internet connection and try again.",
       });
     } finally {
       setLoading(false);
@@ -86,52 +68,33 @@ const ContactForm = () => {
           Contact
         </Button>
       </DialogTrigger>
+
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
           <DialogTitle>Contact Equalysis</DialogTitle>
         </DialogHeader>
+
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="space-y-2">
             <Label htmlFor="name">Name *</Label>
-            <Input
-              id="name"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              required
-            />
+            <Input id="name" name="name" required />
           </div>
+
           <div className="space-y-2">
             <Label htmlFor="email">Email *</Label>
-            <Input
-              id="email"
-              name="email"
-              type="email"
-              value={formData.email}
-              onChange={handleChange}
-              required
-            />
+            <Input id="email" name="email" type="email" required />
           </div>
+
           <div className="space-y-2">
             <Label htmlFor="organization">Organization</Label>
-            <Input
-              id="organization"
-              name="organization"
-              value={formData.organization}
-              onChange={handleChange}
-            />
+            <Input id="organization" name="organization" />
           </div>
+
           <div className="space-y-2">
             <Label htmlFor="message">Message *</Label>
-            <Textarea
-              id="message"
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-              rows={4}
-              required
-            />
+            <Textarea id="message" name="message" rows={4} required />
           </div>
+
           <Button
             type="submit"
             className="w-full bg-teal-600 hover:bg-teal-700"
@@ -146,4 +109,5 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
+
 
